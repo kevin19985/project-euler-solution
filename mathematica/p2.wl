@@ -1,4 +1,3 @@
-#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 (*
@@ -12,8 +11,4 @@ find the sum of the even-valued terms.
 *)
 
 
-s=0;
-For[i=0,(f=Fibonacci[i])<=4000000,i++,s+=f*(1-Mod[f,2])]
-Print[s]
-
-(* To be optimized *)
+NestWhile[{First[#]+Fibonacci[Last[#]]*(1-Mod[Fibonacci[Last[#]],2]),Last[#]+1}&,{0,2},Fibonacci[Last[#]]<=4000000&]
