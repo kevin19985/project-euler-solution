@@ -1,4 +1,3 @@
-#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 (*
@@ -8,4 +7,4 @@ Find the sum of all the primes below two million.
 *)
 
 
-Plus@@Prime/@Range[PrimePi[2000000]]
+Total[Prime/@Range[PrimePi[2000000]]]

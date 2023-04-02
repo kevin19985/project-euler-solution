@@ -1,4 +1,3 @@
-#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 (*
@@ -52,4 +51,4 @@ number = "73167176531330624919225119674426574742355349194934
 84580156166097919133875499200524063689912560717606
 05886116467109405077541002256983155200055935729725
 71636269561882670428252483600823257530420752963450";
-MaximalBy[({Times@@IntegerDigits[ToExpression[#]],IntegerDigits[ToExpression[#]]})&/@StringPartition[StringJoin[StringSplit[number]],13,1],First][[1]]
+Flatten[MaximalBy[({Times@@IntegerDigits[ToExpression[#]],IntegerDigits[ToExpression[#]]})&/@StringPartition[StringJoin[StringSplit[number]],13,1],First],1]

@@ -1,4 +1,3 @@
-#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 (*
@@ -12,4 +11,4 @@ Find the product abc.
 *)
 
 
-Times[a,b,c]/.Solve[a^2+b^2==c^2&&a+b+c==1000,{a,b,c},PositiveIntegers][[1]]
+Times[a,b,c]/.First[Solve[a^2+b^2==c^2&&a+b+c==1000,{a,b,c},PositiveIntegers]]

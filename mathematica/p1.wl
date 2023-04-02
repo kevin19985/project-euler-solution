@@ -9,4 +9,4 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 *)
 
 
-Plus@@Select[Range[1000-1],(Mod[#,3]==0||Mod[#,5]==0)&]
+Total[Select[Range[1000-1],(Mod[#,3]==0||Mod[#,5]==0)&]]

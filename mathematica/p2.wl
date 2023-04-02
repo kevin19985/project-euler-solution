@@ -15,3 +15,5 @@ find the sum of the even-valued terms.
 s=0;
 For[i=0,(f=Fibonacci[i])<=4000000,i++,s+=f*(1-Mod[f,2])]
 Print[s]
+
+(* To be optimized *)

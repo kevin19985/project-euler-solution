@@ -1,4 +1,3 @@
-#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 (*
@@ -15,4 +14,4 @@ of the first one hundred natural numbers and the square of the sum.
 *)
 
 
-(Plus@@Range[100])^2-Plus@@((#^2)&/@Range[100])
+Total[Range[100]]^2-Total[((#^2)&/@Range[100])]
