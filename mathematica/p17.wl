@@ -15,5 +15,5 @@ Total[Array[StringLength@IntegerName[#,"Words"]&,1000]]
 
 (* 
 Although the word represent given by IntegerName is defferent from the requirement,
-but it's easy to define a new `IntegerName` meeting that.
+it's easy to define a new `IntegerName` meeting that.
 *)
