@@ -1,6 +1,6 @@
 genLength (a, b) = length $ takeWhile (\n -> primeQ (n^2 + a * n + b)) [0..]
 primeQ n
-  | n <= 1    = False  -- 小于等于1的数不是素数
+  | n <= 1    = False
   | otherwise = null [x | x <- [2..isqrt n], n `mod` x == 0]
   where isqrt = floor . sqrt . fromIntegral
 
